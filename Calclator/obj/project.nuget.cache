@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5sYW2paXewsvAz6p8UuyyBZ45g1B7B5PYp2txs6N0UwpRRarTYHn6HjQhQmCP6csIXLfoHHhOWYAMhm0WwVmcg==",
+  "success": true,
+  "projectFilePath": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calclator\\Calclator\\Calclator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matsu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
