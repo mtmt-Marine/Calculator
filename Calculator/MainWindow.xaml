@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="お電卓" Height="400" Width="320" ResizeMode="NoResize" Icon="/絶好調.png">
-    <Grid Margin="0,0,320,0">
+        Title="お電卓" Height="480" Width="320" ResizeMode="NoResize" Icon="/絶好調.png">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ZeroButton"
+            Content="0" Margin="0,384,32,0" FontSize="50"/>
+        <Button x:Name="OneButton"
+            Content="1" Margin="0,304,112,80" FontSize="50"/>
+        <Button x:Name="TwoButton"
+            Content="2" Margin="80,304,0,80" FontSize="50" HorizontalAlignment="Left" Width="80"/>
+        <Button x:Name="ThreeButton"
+            Content="3" Margin="160,304,80,80" FontSize="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="FourButton"
+            Content="4" Margin="0,224,112,160" FontSize="50"/>
+        <Button x:Name="FiveButton"
+            Content="5" Margin="80,224,32,160" FontSize="50"/>
+        <Button x:Name="SixButton"
+            Content="6" Margin="160,224,80,160" FontSize="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="SevenButton"
+            Content="7" Margin="0,144,112,240" FontSize="50"/>
+        <Button x:Name="EightButton"
+            Content="8" Margin="80,144,32,240" FontSize="50"/>
+        <Button x:Name="NineButton"
+            Content="9" Margin="160,144,80,240" FontSize="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="PeriodButton"
+            Content="." Margin="160,384,80,0" FontSize="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="EqualButton"
+            Content="=" Margin="48,304,0,0" FontSize="50" Grid.Column="1"/>
+        <Button x:Name="PlusButton"
+            Content="+" Margin="48,144,0,160" FontSize="50" Grid.Column="1"/>
+        <Button x:Name="MinusButton"
+            Content="-" Margin="48,64,0,320" FontSize="50" Grid.Column="1"/>
+        <Button x:Name="MultipleButton"
+            Content="*" Margin="160,64,80,320" FontSize="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="DivideButton"
+            Content="/" Margin="80,64,32,320" FontSize="50"/>
+        <Button x:Name="ClearButton"
+            Content="C" Margin="0,64,112,320" FontSize="50"/>
 
     </Grid>
 </Window>
