@@ -7,47 +7,59 @@
         mc:Ignorable="d"
         Title="お電卓" Height="480" Width="320" ResizeMode="NoResize" Icon="/絶好調.png">
     <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button x:Name="ZeroButton"
-            Content="0" Margin="0,384,32,0" FontSize="50"/>
+            Content="0" FontSize="30" Grid.ColumnSpan="2" Grid.Row="4" Margin="0,80,0,0" Grid.RowSpan="2"/>
         <Button x:Name="OneButton"
-            Content="1" Margin="0,304,112,80" FontSize="50"/>
+            Content="1" FontSize="30" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="3"/>
         <Button x:Name="TwoButton"
-            Content="2" Margin="80,304,0,80" FontSize="50" HorizontalAlignment="Left" Width="80"/>
+            Content="2" FontSize="30" Grid.Column="1" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="3" HorizontalAlignment="Center" Width="80" Height="80" VerticalAlignment="Top"/>
         <Button x:Name="ThreeButton"
-            Content="3" Margin="160,304,80,80" FontSize="50" Grid.ColumnSpan="2"/>
+            Content="3" FontSize="30" Grid.Column="2" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="3"/>
         <Button x:Name="FourButton"
-            Content="4" Margin="0,224,112,160" FontSize="50"/>
+            Content="4" FontSize="30" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="2"/>
         <Button x:Name="FiveButton"
-            Content="5" Margin="80,224,32,160" FontSize="50"/>
+            Content="5" FontSize="30" Grid.Column="1" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="2"/>
         <Button x:Name="SixButton"
-            Content="6" Margin="160,224,80,160" FontSize="50" Grid.ColumnSpan="2"/>
+            Content="6" FontSize="30" Grid.Column="2" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="2"/>
         <Button x:Name="SevenButton"
-            Content="7" Margin="0,144,112,240" FontSize="50"/>
+            Content="7" FontSize="30" Grid.Row="1" Margin="0,80,0,0" Grid.RowSpan="2"/>
         <Button x:Name="EightButton"
-            Content="8" Margin="80,144,32,240" FontSize="50"/>
+            Content="8" FontSize="30" Grid.Column="1" Grid.Row="1" Margin="0,80,0,0" Grid.RowSpan="2"/>
         <Button x:Name="NineButton"
-            Content="9" Margin="160,144,80,240" FontSize="50" Grid.ColumnSpan="2"/>
+            Content="9" FontSize="30" Grid.Column="2" Margin="0,80,0,0" Grid.RowSpan="2" Grid.Row="1"/>
         <Button x:Name="PeriodButton"
-            Content="." Margin="160,384,80,0" FontSize="50" Grid.ColumnSpan="2"/>
+            Content="." FontSize="30" Grid.Column="2" Grid.Row="4" Margin="0,80,0,0" Grid.RowSpan="2"/>
         <Button x:Name="EqualButton"
-            Content="=" Margin="48,304,0,0" FontSize="50" Grid.Column="1"/>
+            Content="=" FontSize="30" Grid.Column="3" Grid.Row="3" Margin="0,80,0,0" Grid.RowSpan="3"/>
         <Button x:Name="PlusButton"
-            Content="+" Margin="48,144,0,160" FontSize="50" Grid.Column="1"/>
+            Content="+" FontSize="30" Grid.Column="3" Margin="0,80,0,0" Grid.Row="1" Grid.RowSpan="3"/>
         <Button x:Name="MinusButton"
-            Content="-" Margin="48,64,0,320" FontSize="50" Grid.Column="1"/>
+            Content="-" FontSize="30" Grid.Column="3" Margin="0,64,0,0" Grid.RowSpan="2"/>
         <Button x:Name="MultipleButton"
-            Content="*" Margin="160,64,80,320" FontSize="50" Grid.ColumnSpan="2"/>
+            Content="*" FontSize="30" Grid.Column="2" Margin="0,64,0,0" Grid.RowSpan="2"/>
         <Button x:Name="DivideButton"
-            Content="/" Margin="80,64,32,320" FontSize="50"/>
+            Content="/" FontSize="30" Grid.Column="1" Margin="0,64,0,0" Grid.RowSpan="2"/>
         <Button x:Name="ClearButton"
-            Content="C" Margin="0,64,112,320" FontSize="50"/>
+            Content="C" FontSize="30" Margin="0,64,0,0" Grid.RowSpan="2"/>
         <TextBox x:Name="InputNumberTextBox"
-            TextWrapping="Wrap" Margin="40,0,0,400" Grid.ColumnSpan="2"/>
+            TextWrapping="Wrap" Margin="40,0,0,0" Grid.ColumnSpan="4" TextAlignment="Right"
+                 FontSize="22" BorderThickness="0"/>
         <TextBox x:Name="SignalTextBox"
-            TextWrapping="Wrap" Height="32" Margin="0,32,152,0" VerticalAlignment="Top"/>
+            TextWrapping="Wrap" Margin="0,32,40,0" TextAlignment="Center"
+                 FontSize="12" BorderThickness="0"/>
     </Grid>
 </Window>
