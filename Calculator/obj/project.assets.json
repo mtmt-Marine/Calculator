@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calclator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calclator\\Calculator\\Calculator.csproj",
+      "projectPath": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calculator\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\matsu\\.nuget\\packages\\",
-      "outputPath": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calclator\\Calculator\\obj\\",
+      "outputPath": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matsu\\AppData\\Roaming\\NuGet\\NuGet.Config",
