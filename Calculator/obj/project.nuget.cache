@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "npfuJd5i7UoacysblHmhC5RxYjrLNlYxyk2G/HlO1Dl4yD4ZzwEsq4akboiPyCxaoKuOl8SBKx6ps7nKYfvuGA==",
+  "dgSpecHash": "5ZgaCRRR7f9RZhwL9Jf6L++dmECX5piAp3fuG9ByxxIdsxttJwWYbZ9NFDfWMKkYS/KVGkn1Wq0p/sRXkFBSMw==",
   "success": true,
   "projectFilePath": "D:\\自分用（shareにあげる）\\見習い卒\\PG研修\\おまけ\\Calculator\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\matsu\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
     "C:\\Users\\matsu\\.nuget\\packages\\reactiveproperty\\7.1.0\\reactiveproperty.7.1.0.nupkg.sha512",
     "C:\\Users\\matsu\\.nuget\\packages\\reactiveproperty.core\\7.1.0\\reactiveproperty.core.7.1.0.nupkg.sha512",
     "C:\\Users\\matsu\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\matsu\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512",
-    "C:\\Users\\matsu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\matsu\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512"
   ],
   "logs": []
 }
