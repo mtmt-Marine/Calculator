@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="お電卓" Height="480" Width="320" ResizeMode="NoResize" Icon="/絶好調.png">
+        Title="お電卓" Height="480" Width="320" ResizeMode="NoResize">
     <Grid Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -22,44 +22,44 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button x:Name="ZeroButton"
-            Content="0" FontSize="30" Margin="0,80,0,0" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+            Content="0" FontSize="30" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
         <Button x:Name="OneButton"
-            Content="1" FontSize="30" Margin="0,80,0,0" Grid.Row="3" Grid.RowSpan="2"/>
+            Content="1" FontSize="30" Grid.Column="0" Grid.Row="4"/>
         <Button x:Name="TwoButton"
-            Content="2" FontSize="30" Margin="0,80,0,0" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1"/>
+            Content="2" FontSize="30" Grid.Column="1" Grid.Row="4"/>
         <Button x:Name="ThreeButton"
-            Content="3" FontSize="30" Margin="0,80,0,0" Grid.Row="3" Grid.RowSpan="2" Grid.Column="2"/>
+            Content="3" FontSize="30" Grid.Column="2" Grid.Row="4"/>
         <Button x:Name="FourButton"
-            Content="4" FontSize="30" Margin="0,80,0,0" Grid.Row="2" Grid.RowSpan="2"/>
+            Content="4" FontSize="30" Grid.Column="0" Grid.Row="3"/>
         <Button x:Name="FiveButton"
-            Content="5" FontSize="30" Margin="0,80,0,0" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"/>
+            Content="5" FontSize="30" Grid.Column="1" Grid.Row="3"/>
         <Button x:Name="SixButton"
-            Content="6" FontSize="30" Margin="0,80,0,0" Grid.Row="2" Grid.RowSpan="2" Grid.Column="2"/>
+            Content="6" FontSize="30" Grid.Column="2" Grid.Row="3"/>
         <Button x:Name="SevenButton"
-            Content="7" FontSize="30" Margin="0,80,0,0" Grid.Row="1" Grid.RowSpan="2"/>
+            Content="7" FontSize="30" Grid.Column="0" Grid.Row="2"/>
         <Button x:Name="EightButton"
-            Content="8" FontSize="30" Margin="0,80,0,0" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"/>
+            Content="8" FontSize="30" Grid.Column="1" Grid.Row="2"/>
         <Button x:Name="NineButton"
-            Content="9" FontSize="30" Margin="0,80,0,0" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2"/>
+            Content="9" FontSize="30" Grid.Column="2" Grid.Row="2"/>
         <Button x:Name="PeriodButton"
-            Content="." FontSize="30" Margin="0,80,0,0" Grid.Row="4" Grid.RowSpan="2" Grid.Column="2"/>
+            Content="." FontSize="30" Grid.Column="2" Grid.Row="5"/>
         <Button x:Name="EqualButton"
-            Content="=" FontSize="30" Margin="0,80,0,0" Grid.Row="3" Grid.RowSpan="3" Grid.Column="3"/>
-        <Button x:Name="PlusButton"
-            Content="+" FontSize="30" Margin="0,80,0,0" Grid.Row="1" Grid.RowSpan="3" Grid.Column="3"/>
+            Content="=" FontSize="30" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2"/>
+        <Button x:Name="PlusButton" Command="{Binding SignButton}"
+            Content="+" FontSize="30" Grid.Column="3" Grid.Row="2" Grid.RowSpan="2"/>
         <Button x:Name="MinusButton"
-            Content="-" FontSize="30" Margin="0,64,0,0" Grid.RowSpan="2" Grid.Column="3"/>
+            Content="-" FontSize="30" Grid.Column="3" Grid.Row="1"/>
         <Button x:Name="MultipleButton"
-            Content="*" FontSize="30" Margin="0,64,0,0" Grid.RowSpan="2" Grid.Column="2"/>
+            Content="*" FontSize="30" Grid.Column="2" Grid.Row="1"/>
         <Button x:Name="DivideButton"
-            Content="/" FontSize="30" Margin="0,64,0,0" Grid.RowSpan="2" Grid.Column="1"/>
+            Content="/" FontSize="30" Grid.Column="1" Grid.Row="1"/>
         <Button x:Name="ClearButton"
-            Content="C" FontSize="30" Margin="0,64,0,0" Grid.RowSpan="2"/>
+            Content="C" FontSize="30" Grid.Column="0" Grid.Row="1"/>
         <TextBox x:Name="InputNumberTextBox"
-            TextWrapping="Wrap" Margin="40,0,0,0" Grid.ColumnSpan="4" TextAlignment="Right"
+            TextWrapping="Wrap" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Right"
                  FontSize="22" BorderThickness="0"/>
-        <TextBox x:Name="SignalTextBox"
-            TextWrapping="Wrap" Margin="0,32,40,0" TextAlignment="Center"
+        <TextBox x:Name="SignTextBox" Text="{Binding InputSign, Mode=OneWay}"
+            TextWrapping="Wrap" Grid.Column="0" Grid.Row="0" TextAlignment="Center"
                  FontSize="12" BorderThickness="0"/>
     </Grid>
 </Window>
